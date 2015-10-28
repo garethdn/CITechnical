@@ -1,0 +1,30 @@
+{
+  "name": "MarionetteSkeleton",
+  "version": "0.0.0",
+  "authors": [
+    "Gareth Nolan <garethdn@gmail.com>"
+  ],
+  "description": "Boilerplate code for Marionette projects using Grunt, Bower, SASS and RequireJS.",
+  "main": "app/main.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.marionette": "~2.4.3",
+    "lodash": "~3.10.1",
+    "bootstrap-sass": "~3.3.5",
+    "handlebars": "~4.0.3",
+    "requirejs": "~2.1.20"
+  }
+}

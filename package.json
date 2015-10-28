@@ -1,0 +1,20 @@
+{
+  "name": "MarionetteSkeleton",
+  "version": "0.0.0",
+  "description": "Boilerplate code for Marionette projects using Grunt, Bower, SASS and RequireJS.",
+  "main": "app/main.js",
+  "scripts": {
+    "postinstall": "bower install && grunt"
+  },
+  "author": "Gareth Nolan",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-handlebars": "^0.11.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
