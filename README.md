@@ -8,7 +8,7 @@ Run `npm install` to install all dependencies in `package.json`. When complete t
 
 ### Why not use a yeoman generator?
 
-* The current version of `generator-backbone` (0.3.2) is ![breaking](https://github.com/yeoman/generator-backbone/issues/360).
+* The current version of `generator-backbone` (0.3.2) is [breaking](https://github.com/yeoman/generator-backbone/issues/360).
 
 * There doesn't appear to be a good, regularly updated yeoman generator for a Marionette application.
 
