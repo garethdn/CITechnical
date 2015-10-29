@@ -4,7 +4,7 @@ Boilerplate code for Marionette projects using Grunt, Bower, SASS and RequireJS.
 
 ### Installation
 
-Run `npm start` to install all dependencies in `package.json`. When complete this will automatically trigger `bower install` and then the default grunt task (`build` followed by `watch`), and then it will finally start an express server. Navigate to `http://127.0.0.1:8000/` to view th app.
+Run `npm start` to install all dependencies in `package.json`. When complete this will automatically trigger `bower install` and then `grunt build` - finally start an express server. Navigate to `http://127.0.0.1:8000/` to view th app.
 
 ### Why not use a yeoman generator?
 
