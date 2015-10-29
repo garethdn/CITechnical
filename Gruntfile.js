@@ -53,6 +53,15 @@ module.exports = function(grunt){
         files: [
           { src: config.app + 'scripts/templates.js', dest: config.dist + 'scripts/templates.js' }
         ]
+      },
+
+      fonts: {
+        files: [{
+          expand: true,
+          cwd: config.bower + 'bootstrap-sass/assets/fonts',
+          dest: config.dist + 'fonts',
+          src: ['**']
+        }]
       }
     },
 
@@ -104,5 +113,4 @@ module.exports = function(grunt){
   });
 
   grunt.registerTask('build', ['clean', 'sass', 'handlebars', 'copy', 'requirejs']);
-  grunt.registerTask('default', ['clean', 'sass', 'handlebars', 'copy', 'requirejs', 'watch']);
 };
