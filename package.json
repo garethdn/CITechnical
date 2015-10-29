@@ -1,7 +1,6 @@
 {
-  "name": "MarionetteSkeleton",
+  "name": "ClavisTechnical",
   "version": "0.0.0",
-  "description": "Boilerplate code for Marionette projects using Grunt, Bower, SASS and RequireJS.",
   "main": "app/main.js",
   "scripts": {
     "prestart": "npm install",
