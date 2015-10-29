@@ -1,0 +1,22 @@
+#greek-gods {
+
+  form {
+    margin-top: 25px;
+
+    &.form-inline {
+
+      // force inline block for all screen sizes
+      .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+      }
+
+      .checkbox {
+        display: inline-block;
+      }
+
+    }
+  }
+
+}

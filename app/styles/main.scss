@@ -1,1 +1,6 @@
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss'
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
+@import '../../app/scripts/utilities/empty_lists/empty.scss';
+@import '../../app/scripts/utilities/errors/error.scss';
+@import '../../app/scripts/utilities/loading/loading.scss';
+@import '../../app/scripts/greek_gods/greek-gods.scss';

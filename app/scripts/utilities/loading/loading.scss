@@ -1,0 +1,34 @@
+.loading-container {
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+
+	.loading {
+		height:100%;
+		width: 100%;
+		display: table;
+		text-align: center;
+
+		.loading-content {
+			display: table-cell;
+			vertical-align:middle;
+
+			.message {
+				margin-top:5px;
+			}
+		}
+	}
+}
+
+.table-loading-container {
+
+	height: 250px;
+
+	.loading {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+}

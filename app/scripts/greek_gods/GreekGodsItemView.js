@@ -4,14 +4,14 @@ define(function(require) {
   var Marionette = require('marionette');
   var templates = require('templates');
 
-  var FeatureItemView = Marionette.ItemView.extend({
+  var GreekGodsItemView = Marionette.ItemView.extend({
 
-    template: templates.FeatureItemView,
+    template: templates.GreekGodsItemView,
 
     tagName: 'tr'
 
   });
 
-  return FeatureItemView;
+  return GreekGodsItemView;
 
 });

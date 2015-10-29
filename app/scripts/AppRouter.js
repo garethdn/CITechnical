@@ -3,16 +3,13 @@ define(function(require) {
 
   var Marionette = require('marionette');
   var AppLayout = require('AppLayout');
-  var FeatureCompositeView = require('feature/FeatureCompositeView');
-  var FeatureCollection = require('feature/FeatureCollection');
+  var GreekGodsCompositeView = require('greek_gods/GreekGodsCompositeView');
+  var GreekGodsCollection = require('greek_gods/GreekGodsCollection');
 
   var AppRouter = Marionette.AppRouter.extend({
 
     routes: {
-      ''        : 'home',
-      'home'    : 'home',
-      'about'   : 'about',
-      'contact' : 'contact'
+      '': 'gods'
     },
 
     initialize: function(options){
@@ -23,20 +20,14 @@ define(function(require) {
       this.appLayout.render();
     },
 
-    home: function(){
-      console.log('Home route');
+    gods: function(){
+      var greekGodsView = new GreekGodsCompositeView({
+        collection: new GreekGodsCollection()
+      });
 
-      this.appLayout.contentRegion.show(new FeatureCompositeView({
-        collection: new FeatureCollection()
-      }));
-    },
+      this.appLayout.contentRegion.show(greekGodsView);
 
-    about: function(){
-      console.log('About route');
-    },
-
-    contact: function(){
-      console.log('Contact route');
+      greekGodsView.collection.fetch({ reset: true });
     }
 
   });

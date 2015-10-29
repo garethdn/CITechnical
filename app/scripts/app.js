@@ -1,6 +1,9 @@
 define(function(require, exports, module) {
   'use strict';
 
+  // Custom underscore helpers
+  require('utilities/underscore_helpers/objects');
+
   var Marionette = require('marionette');
   var AppRouter = require('AppRouter');
 

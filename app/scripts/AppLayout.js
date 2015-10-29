@@ -9,14 +9,7 @@ define(function(require) {
     template: templates.AppLayout,
 
     regions: {
-      'contentRegion' : '#region-content',
-      'modalRegion'   : '#region-modal'
-    },
-
-    templateHelpers: function() {
-      return {
-        data: { name: 'Testing', id: 12345 }
-      };
+      'contentRegion' : '#region-content'
     }
 
   });

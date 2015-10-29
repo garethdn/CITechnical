@@ -2,6 +2,7 @@ require.config({
 
   paths: {
     'jquery'                : '../../bower_components/jquery/dist/jquery',
+    'moment'                : '../../bower_components/moment/min/moment.min',
     'underscore'            : '../../bower_components/underscore/underscore',
     'handlebars'            : '../../bower_components/handlebars/handlebars.amd',
     'backbone'              : '../../bower_components/backbone/backbone',

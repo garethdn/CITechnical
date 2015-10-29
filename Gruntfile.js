@@ -61,6 +61,11 @@ module.exports = function(grunt){
           cwd: config.bower + 'bootstrap-sass/assets/fonts',
           dest: config.dist + 'fonts',
           src: ['**']
+        },{
+          expand: true,
+          cwd: config.bower + 'font-awesome/fonts',
+          dest: config.dist + 'fonts',
+          src: ['**']
         }]
       }
     },
@@ -99,7 +104,7 @@ module.exports = function(grunt){
     handlebars: {
       compile: {
         options: {
-          amd: true,
+          amd: ['handlebars', 'utilities/handlebar_helpers/dateTime', 'utilities/handlebar_helpers/textTransformations'],
           processName: function(filePath) {
             return filePath.split('/').pop().split('.')[0];
           }
