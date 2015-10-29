@@ -1,5 +1,9 @@
 # CI Technical Test
 
+### Demo
+
+[https://ci-technical-test.herokuapp.com/](https://ci-technical-test.herokuapp.com/)
+
 ### Installation
 
 Run `npm start` to install all dependencies in `package.json`. When complete this will automatically trigger `bower install` and then `grunt build` - finally starting an express server. Navigate to `http://127.0.0.1:8000/` to view the app.
@@ -24,7 +28,7 @@ search term.
 ### Possible improvements
 
 * ~~Loading view for when a collection request is underway~~
-* Deply demo to Heroku
+* ~~Deploy demo to Heroku~~
 * Search should add a query string to the url and a router should trigger the network request
 * Methods related to searching, error views, loading views can be easily moved to a mixin or base compositve view
 
