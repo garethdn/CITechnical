@@ -1,0 +1,14 @@
+language: node_js
+script:
+- npm install
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: aIcar3vjsu7sbL0m/mMeVNFizWbCTYDKhrv72bzmvkvkx0DZCr42JAmUQQmz+7f2SpT6h6s2EdyB4XddXB4zKyjvdbWQBfFXrVjsXVqtXl7nqoQHBuM9JeTSN2DpybBYnF2xzDLbmEzItpPDyd3UDCJ8JQRU4PbNrjx0lf3ccO+1EvH1HRiGogvfDOh1XmhlOHfhfjowV81diQN/XlNr/R6IuO3V+YHubdGlKzDSm603FcSWmnB02PLU0e5dS588zyZxESS/Jh/5G8zB75qxQla+ueqxfbArNdcuy+xunNwNYm6GNlxstVLezkecGI3XKW+GDui8F+BQxVJi6w8qT2AFdQwnyHIVbay1YxmXb6XwnFsmnMLXL1XRHVfaTj4Bv2UTrPOfDXGPee9PQMoqqRs7KbTvSF7rCNDbfAt22ZGYxQ8eHTO97a/FWq0eaPi4iuyv0RnlUBnlVx/WKWJR3HpvjXKtWSXtYITgt/Dvl3jGjClOG7TAARVOid2UcZpNrCXmVXRg5T8ta9vfpC5N1iGrPmErIrVrpurU2OEGU2nbaUZhWNEwCGTIDpyspIQunmQ1lVjRTq6n+R+ZRU0QitZoSDe2+0/7q4GgbhremuW7f3rx01cwqtP2yIwCwHCn3ryRmQr45ewTTLB5XGlFGD66tBbASQ6ZcZGde/X8R4M=
+  app: ci-technical-test
+  on:
+    repo: garethdn/CITechnical
